@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 150px;
+    background: rgb(255, 255, 255);
+    transform: rotate(-30deg) skew(25deg) scale(.8);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container:hover img:nth-child(4) {
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+.container:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: .8;
+}
+.container:hover img:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: .6;
+}
+.container:hover img:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: .4;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:inline-block;
+    width: 100%;
+    position:absolute;
+    bottom: 80%;
+    left: 5%;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(222, 17, 17);
+    opacity: 0.8;
+    font-size: 25px;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: rgb(148, 167, 154);
+    color: rgb(7, 6, 6);
+}
+
+ul li ul li {
+    display: none;
+
+}
+
+ul li:hover ul li {
+    display: block;
+    font-size: medium;
+    position: relative;
+}

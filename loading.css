@@ -1,0 +1,94 @@
+h1 {
+    color: orange;
+
+}
+.rotate{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(70% -1em);
+    top: 35%;
+    left: 50%;
+    animation: rotate 2s infinite;
+    border-radius: 1.3em;
+    transform-origin: 1.3em 2em;
+    
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+    
+}
+
+.a1 {
+    animation-delay: 0.1s;
+    background-color: rgb(211, 149, 159);
+}
+.a2 {
+    animation-delay: 0.2s;
+    background-color: rgb(71, 249, 101);
+}
+.a3 {
+    animation-delay: 0.3s;
+    background-color: rgb(79, 81, 159);
+}
+.a4 {
+    animation-delay: 0.4s;
+    background-color: rgb(206, 44, 122);
+}
+.a5 {
+    animation-delay: 0.5s;
+    background-color: rgb(156, 189, 25);
+}
+
+
+.box {
+    background-color: rgb(89, 202, 202);
+    text-align: center;
+    font-size: 40px;
+    display: none;
+    
+}
+
+@media (max-width: 400px) {
+    #box1{
+        display: block;
+        background-color: blanchedalmond;
+    }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+    #box2{
+        display: block;
+        background-color: brown;
+        color: aliceblue;
+    }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+    #box3{
+        display: block;
+        background-color: aqua;
+
+    }
+}
+@media (min-width: 801px) and (max-width: 999px) {
+    #box4{
+        display: block;
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 1000px) and (max-width: 2000px) {
+    .box{
+        display: block;
+        background-color: rgb(20, 15, 103);
+        color: white;
+    }
+}
+

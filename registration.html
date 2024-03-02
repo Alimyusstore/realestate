@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real estate registration form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<style>
+    textarea, input[type=text], input[type=number], input[type=email], input[type=password] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid rgb(151, 95, 123);
+        box-sizing: border-box;
+    }
+</style>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: bisque;">
+    <div>
+        <ul>
+            <li><a href="./yusstoreverifiedproperty.html">Real Estate</a>
+                <ul>
+                    <li><a href="./list.html">List</a></li>
+                    <li><a href="./table.html">Table</a></li>
+                    <li><a href="./form.html">Form</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./registration.html">Registration</a></li>
+                </ul>
+            </li>
+          
+            <li><a href="./yusstore.html">Zulfah</a>
+                <ul>
+                    <li><a href="./jobapp.html">Job App</a></li>
+                </ul>
+            </li>
+          
+            <li><a href="./css_frame.html">Animation</a>
+                <ul>
+                    <li><a href="./cssanimation.html">Box</a></li>
+                    <li><a href="./imaagehover.html">Images</a></li>
+                    <li><a href="./persertive.html">Perspective</a></li>
+                </ul>
+            </li>
+          
+            <li><a href="./imagelink.html">Link</a>
+                <ul>
+                    <li><a href="./iframe.html">Iframe</a></li>
+                    <li><a href="./hover.html">Hover</a></li>
+                </ul>
+            </li>
+          
+            <li><a href="./grid.html">Grid</a>
+                <ul>
+                    <li><a href="./flexbox.html">Flex</a></li>
+                    <li><a href="./gridvsflex.html">Grid vs Flex</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>    
+
+
+
+    <h1 style="text-align: center;">Real Estate Registration</h1>
+    
+    <form style="border: 2px solid #9939f1;">
+    
+        <div style="padding: 25px; background-color: aqua;">
+
+            <label >First Name: </label>
+            <input type="text" name="FirstName" placeholder=" Enter First Name" maxlength="15"> <br>
+    
+            <label >Middle Name: </label>
+            <input type="text" name="MiddleName" placeholder=" Enter First Name" maxlength="15"> <br>
+    
+            <label >Last Name: </label>
+            <input type="text" name="LastName" placeholder=" Enter First Name" maxlength="15"> <br><br>
+    
+            <label>Course: </label>
+            <select name="Course" id="course">
+                <option value="course">Course</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="agriculturial">Agriculturial</option>
+            </select> <br><br>
+
+            <label>Gender: </label> <br>
+            <input type="radio" name="Male" placeholder="Male"> Male <br>
+            <input type="radio" name="Female" placeholder="Female"> Female <br>
+            <input type="radio" name="Other" placeholder="Other"> Other <br><br>
+
+            <label>Phone: </label>
+            <input type="text" name="country_code" value="+234" maxlength="4" placeholder="Country_Code" >
+            <input type="number" name="Number"  maxlength="10" placeholder="Enter Number"><br><br>
+
+            <label>Address: </label>
+            <textarea name="Address" placeholder="Enter Address..." id="Address" cols="70" rows="5" value="Address">Enter Address...</textarea> <br><br>
+
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter Email"> <br><br>
+
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter Password"> <br><br>
+
+            <label>Email: </label>
+            <input type="password" name="pass" placeholder="Enter Password"> <br><br>
+
+            <input type="button" placeholder="button" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,150 @@
+.parent {
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+}
+
+.child {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
+
+.parent:hover .child {
+    background-color: aqua;
+
+    animation: example 5s ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes example {
+    0%{
+        transform: translateX(0%);
+
+        }
+
+        40% {
+            background-color: black;
+            transform: translateY(100%);
+        } 
+
+        66% {
+            background-color: green;
+            transform:  translateX(100%) translateY(100%);  
+        }
+
+        88% {
+            background-color: red;
+            transform: translateX(100%);
+        }
+
+        100% {
+            background-color: orange;
+            transform: translateX(100%), translateY(100%);
+        }
+
+
+        
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #66f291;
+    transition-duration: 2s;
+    transition-property: transform;
+    transition-timing-function: linear;
+}
+
+.box:hover {
+    background-color: #2277ff;
+    transform: rotate(180deg);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:inline-block;
+    width: 100%;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(55, 60, 36);
+    opacity: 0.8;
+    font-size: 25px;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: rgb(196, 221, 221);
+    color: black;
+}
+
+ul li ul li {
+    display: none;
+
+}
+
+ul li:hover ul li {
+    display: block;
+    font-size: medium;
+}
+
+.blink {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    -webkit-animation: blink 10s infinite;
+    animation: blink 10s infinite;
+    
+}
+
+@keyframes blink {
+    0% {
+        background-color: #2277ff;
+    }
+    10% {
+        background-color:#66f291
+    }
+    20% {
+        background-color: #ff7722;
+    }
+    30% {
+        background-color: #ffff22;
+    }
+    40% {
+        background-color: #ff22e9;
+    }
+    50% {
+        background-color: #ff2222;
+    }
+    60% {
+        background-color: #ad99f4;
+    }
+    70% {
+        background-color: #6c9fec;
+    }
+    80% {
+        background-color: #dbf69c;
+    }
+    90% {
+        background-color: #fac975;
+    }
+    100% {
+        background-color: #ee8a8a;
+    }
+}
